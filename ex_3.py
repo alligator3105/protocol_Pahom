@@ -15,7 +15,7 @@ s = ''
 
 for i in m:
     for j in i:
-        if len(s) + len(j) < limit - 2:
+        if len(s) + len(j) < limit:
             s = s + j + ' '
         else:
             if rules[m.index(i)] == "LEFT":
