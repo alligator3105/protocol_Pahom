@@ -18,7 +18,7 @@ for i in m:
         if len(s) + len(j) < limit:
             s = s + j + ' '
         else:
-            if rules[m.index(i)] == "LEFT":
+            if rules[m.index(i)] == "LEFT" :
                 s = '*' + s.rstrip().ljust(limit - 2, ' ') + '*'
             elif rules[m.index(i)] == "RIGHT":
                 s = '*' + s.rstrip().rjust(limit - 2, ' ') + '*'
